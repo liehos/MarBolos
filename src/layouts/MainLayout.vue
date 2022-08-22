@@ -16,19 +16,19 @@
             v-model="tab"
           >
           <q-route-tab
-          name="mails"
-          icon="mail"
+          name="home"
+          icon="eva-home-outline"
           to='/'
             />
           <q-route-tab
-          name="alarms"
-          icon="alarm"
+          name="galley"
+          icon="eva-image-outline"
           to='/gallery'
 
           />
           <q-route-tab
           name="movies"
-          icon="movie"
+          icon="eva-phone-outline"
           to='/contact'
           />
           </q-tabs>

@@ -4,6 +4,7 @@
 
     <q-carousel
       animated
+      swipeable
       transition-next="slide-left"
       v-model="slide"
       arrows
@@ -11,28 +12,36 @@
       infinite
       autoplay="true"
       draggable="false"
+      height="32rem"
     >
-      <q-carousel-slide :name="1" img-src="https://cdn.quasar.dev/img/mountains.jpg" />
-      <q-carousel-slide :name="2" img-src="https://cdn.quasar.dev/img/parallax1.jpg" />
-      <q-carousel-slide :name="3" img-src="https://cdn.quasar.dev/img/parallax2.jpg" />
-      <q-carousel-slide :name="4" img-src="https://cdn.quasar.dev/img/quasar.jpg" />
+      <q-carousel-slide
+      :name="1"
+      img-src="image1.jpeg"
+      />
+      <q-carousel-slide
+      :name="2"
+      img-src="image2.jpeg" />
+      <q-carousel-slide
+      :name="3"
+      img-src="image3.jpeg" />
+      <q-carousel-slide
+      :name="4"
+      img-src="image4.jpeg" />
     </q-carousel>
   </div>
 
   <div>
     <div class="row">
-      <div class="col-2"></div>
-      <div class="col-8">
+      <div class="col">
     <q-btn
       unelevated
       rounded
       color="primary"
       label="Faça já a sua encomenda"
+      to="/contact"
       class="q-ma-md text=center"
       />
       </div>
-
-  <div class="col-2"></div>
   </div>
 </div>
 
